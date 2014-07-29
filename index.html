@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Google Fonts -->
-        <!-- TODO We're going to use the Google Font 'Bitter'. https://www.google.com/fonts#UsePlace:use/Collection:Bitter Link to it here -->
+        <link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
 
         <!-- Foundation CSS -->
         <link rel="stylesheet" href="css/foundation.css">
@@ -34,34 +34,54 @@
                 <h4>the new restaurant by shawn cirkiel<br />poolside at the radisson</h4>
             </div>
 
-            <img src="images/chavez-1.jpg" alt="">
+            <div id="slide">
+                <img src="images/chavez-1.jpg" alt="">
+                <img src="images/chavez-2.jpg" alt="">
+                <img src="images/chavez-3.jpg" alt="">
+                <img src="images/chavez-4.jpg" alt="">
+                <img src="images/chavez-5.jpg" alt="">
+                <img src="images/chavez-6.jpg" alt="">
+                <img src="images/chavez-7.jpg" alt="">
+                <img src="images/chavez-8.jpg" alt="">
+                <img src="images/chavez-9.jpg" alt="">
+                <img src="images/chavez-10.jpg" alt="">
+            </div>
             <!-- TODO there are ten images in the images folder. write image tags for each of them. then wrap the images in a #slides div so that Slides JS knows how to find them -->
         </header>
 
         <!-- Address, map, hours -->
         <section class="address">
+            <div class="row">
             <!-- TODO add a foundation row wrapping this content. do you know why you would add it here as a div, instead of as a class on the section.address? What would happen if you did that? -->
 
                 <!-- TODO for each of these 3 divs (location, map, hours), add foundation column classes so that they sit side by side at large screen sizes, and stack on top of each other at a small screen size -->
                 <div class="location">
+                    <div class="column small-2 medium-4 large-6">
                     <!-- TODO link to the hotel website and make the telephone a tel: link, and style this content -->
-                    at the Radisson Hotel
+                    at the <a href="http://www.radisson.com/austin-hotel-tx-78701/txaustdt">Radisson Hotel</a>
                     111 east cesar chavez
                     austin, texas 78701
-                    512.478.2291
+                    <a href="tel:5551234567">512.478.2291</a>
+                    </div>
                 </div>
 
                 <div class="map">
+                    <div class="column small-2 medium-4 large-6">
+                        <a href="https://www.google.com/maps/place/Chavez/@30.262789,-97.743965,17z/data=!3m1!4b1!4m2!3m1!1s0x8644b507b634bb13:0x1d942eb9e5d6482d"><img src="images/map.png" alt=""></a>
                     <!-- TODO there is a map image in the images folder, link to it and make the link to go this google map: goo.gl/maps/qgnVW -->
+                    </div>
                 </div>
 
                 <div class="hours">
+                    <div class="column small-2 medium-4 large-6">
                     <!-- TODO style this content. use the classes .hours-label and .hours-value to determine which part is which and style it -->
                     breakfast: 6:30–11am
                     lunch: 11am–3pm
                     limited menu: 3–5pm
                     dinner: 5–10pm
+                    </div>
                 </div>
+            </div>
 
         </section>
 
@@ -69,6 +89,36 @@
         <section class="menu">
             <div class="row">
                 <h2>Menus</h2>
+                <div class="row">
+                    <div class="menu-section column small-2">Breakfast
+                        <div id="menu-action-breakfast">
+                        </div>
+                    </div>
+
+                    <div class="menu-section column small-2">Lunch
+                        <div id="menu-action-lunch">
+                        </div>
+                    </div>
+
+                    <div class="menu-section column small-2">Dinner
+                        <div id="menu-action-dinner">
+                        </div>
+                    </div>
+
+                    <div class="menu-section column small-2">Dessert
+                        <div id="menu-action-dessert">
+                        </div>
+                    </div>
+
+                    <div class="menu-section column small-2">Cocktails
+                        <div id="menu-action-cocktails">
+                        </div>
+                    </div>
+
+                    <div class="menu-section column small-2">Wine
+                        <div id="menu-action-wine">
+                        </div>
+                    </div>
             </div>
 
             <!-- TODO add a foundation row wrapping the menu-sections -->
@@ -76,7 +126,7 @@
 
                 There will be 6 .menu-section divs: breakfast, lunch, dinner, dessert, cocktails, and wine. Give them an ID `menu-action-` for each section, e.g. #menu-action-breakfast
 
-                Give them a small-2 columns so they line up appropriately next to each other.
+                Give them a column small-2 columns so they line up appropriately next to each other.
 
                 One of them is active in the mockup. Which one? What kind of classname would you add to show that it is active?
 
@@ -93,6 +143,7 @@
                 </div>
 
             <!-- TODO add a foundation row to wrap around this content -->
+            <div class="row">
                 <div id="menu-section-content" class="menu-section-content menu-dinner is-active">
                     <!-- TODO we'll add the dinner menu content here. Write two columns with the class .menu-group and the foundation column classes. -->
 
@@ -107,6 +158,7 @@
                                 <!-- TODO we are going to do ONLY the "Raw Bar" and "Entrees" section of the dinner menu for now. You can find that content in /menu-content/menu-dinner.md We'll add the rest of the menus with JSON later. -->
                         </div>
                 </div>
+            </div>
 
         </section>
 
